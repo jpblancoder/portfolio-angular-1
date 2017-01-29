@@ -1,0 +1,30 @@
+<div class="project-wrapper">
+    <div ng-if="vm.selectedSite.tech.length > 0">
+        <h3 class="project-subtitle"><i class="fa fa-cog"></i> Technology</h3>
+        <ul class="project-tech">
+            <li ng-repeat="t in vm.selectedSite.tech"><span ng-bind="t"></span></li>
+        </ul>
+    </div>
+
+    <div ng-if="vm.selectedSite.features.length > 0">
+        <h3 class="project-subtitle"><i class="fa fa-check-circle"></i> Features</h3>
+        <ul class="project-tech">
+            <li ng-repeat="f in vm.selectedSite.features"><span ng-bind="f"></span></li>
+        </ul>
+    </div>
+
+    <div ng-if="vm.selectedSite.category">
+        <h3 class="project-subtitle"><i class="fa fa-copyright"></i> Copyright</h3>
+        <div class="project-copyright">
+            <div ng-if="vm.selectedSite.category === 'morneau'">
+                Site Design &amp; Programming: <a href='http://www.morneaushepell.com' target='_blank'>Morneau Shepell</a>.
+            </div>
+            <div ng-if="vm.selectedSite.category === 'shepell'">
+                Site Design &amp; Programming: <a href='http://www.shepellfgi.com' target='_blank'>Shepell&middot;fgi</a>.
+            </div>
+            <div ng-if="vm.selectedSite.category === 'quidnovis'">
+                Site Design &amp; Programming: <a target="_blank" href="http://www.quidnovis.net/">Quid Novis Internet Productions</a>.
+            </div>
+        </div>
+    </div>
+</div>

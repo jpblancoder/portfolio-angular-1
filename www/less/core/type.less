@@ -1,0 +1,48 @@
+// same as an A tag
+.anchor {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+}
+
+// no underline on icons within anchors
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    > i, em {
+      text-decoration: none;
+    }
+  }
+}
+
+// branded hyperlinks
+.link-primary {
+  .link-variant(@brand-primary);
+}
+.link-success {
+  .link-variant(@brand-success);
+}
+.link-info {
+  .link-variant(@brand-info);
+}
+.link-warning {
+  .link-variant(@brand-warning);
+}
+.link-danger {
+  .link-variant(@brand-danger);
+}
+.link-white {
+  .link-variant(#fff);
+}

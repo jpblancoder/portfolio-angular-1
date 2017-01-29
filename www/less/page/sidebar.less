@@ -1,0 +1,113 @@
+.sidebar {
+    padding: 0 20px;
+}
+
+.sidebar-title {
+    margin-top: 20px;
+    color: #333;
+}
+
+.sidebar-desc {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.sidebar-action {
+    margin-bottom: 20px;
+
+    .btn {
+        margin-bottom: 6px;
+    }
+}
+
+.sidebar-button {
+    font-size: 1.8em;
+}
+
+.sidebar-select {
+    max-width: 100%;
+}
+
+.sidebar-intro {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.sidebar-hashtags {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.sidebar-hashlink {
+    padding-bottom: 6px;
+}
+
+.sidebar-desc-break {
+    height: 4px;
+}
+
+.sidebar-creds {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sidebar-cat-link {
+    padding-right: 8px;
+}
+
+@media @visible-md {
+    .sidebar-title {
+        font-size: 32px;
+    }
+}
+
+@media @visible-xs, @visible-sm {
+    .sidebar-title {
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .sidebar {
+        margin-top: 85px;
+        margin-bottom: 16px;
+        padding: 30px 15px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .sidebar-intro {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .sidebar-creds {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.sidebar-social-list {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    .clearfix();
+
+    > li {
+        display: inline-block;
+        padding: 10px;
+
+        a {
+            color: #778888;
+
+            &:hover, &:focus, &:active {
+                color: #334455;
+            }
+        }
+    }
+}
+
+.sidebar-list-sites {
+    text-align: left;
+}

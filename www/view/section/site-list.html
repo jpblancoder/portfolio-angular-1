@@ -1,0 +1,38 @@
+<div class="sidebar">
+    <div ng-include="'view/section/header.html'"></div>
+
+    <div class="sidebar-action">
+        <a ui-sref="index" class="btn btn-primary">
+            <i class="fa fa-lg fa-android" aria-hidden="true"></i> <strong>About</strong>
+        </a>
+        <a class="btn btn-success" target="_blank" ng-if="main.checkAccess()"
+            href="https://drive.google.com/file/d/0BxRqU9B8fdF7RHhYNjhkMU5fNFE/view?usp=sharing">
+            <i class="fa fa-lg fa-file-text-o" aria-hidden="true"></i> <strong>Resume</strong>
+        </a>
+    </div>
+
+    <ul class="list-unstyled sidebar-list-sites clearfix">
+        <li ng-repeat="(cat, value) in vm.projects | groupBy: 'category'">
+            <h2 class="text-capitalize">
+                <a href="" ui-sref="sites({ categoryID: cat, projectID: null })">
+                    <i class="sidebar-cat-link" ng-class="vm.categoryClass(cat)"></i> <span ng-bind="cat"></span>
+                </a>
+            </h2>
+            <div ng-show="vm.isCategorySelected(cat)">
+                <select class="sidebar-select hidden-md hidden-lg hidden-xl"
+                    ng-change="vm.setProjectSelected(cat, vm.selectedSiteOption.project)"
+                    ng-options="site.title for site in value"
+                    ng-model="vm.selectedSiteOption">
+                    <option value="">Select project...</option>
+                </select>
+                <ul class="hidden-xs hidden-sm">
+                    <li ng-repeat="site in value">
+                        <a href="" ui-sref="sites({ categoryID: cat, projectID: site.project })">
+                            <span ng-bind="site.title"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

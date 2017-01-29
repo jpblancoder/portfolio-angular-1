@@ -1,0 +1,16 @@
+*.log
+.awspublish-jpblanchette.com
+.npm
+logs
+node_modules
+npm-debug.log*
+www/bower
+www/js/templates.js
+www/js/app.js
+www/js/app.min.js
+www/js/app.min.js.map
+www/less/app.css
+www/less/app.css.map
+www/vendor/bootstrap/less/bootstrap.css
+www/vendor/bootstrap/less/bootstrap.css.map
+secret.js

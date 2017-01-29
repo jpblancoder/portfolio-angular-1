@@ -1,0 +1,71 @@
+<div class="sidebar">
+    <div ng-include="'view/section/header.html'"></div>
+
+    <div class="sidebar-action">
+        <a ui-sref="sites" class="btn btn-primary" ng-if="main.checkAccess()">
+            <i class="fa fa-lg fa-briefcase" aria-hidden="true"></i> <strong>Portfolio</strong>
+        </a>
+        <a class="btn btn-success" target="_blank" ng-if="main.checkAccess()"
+            href="https://docs.google.com/document/d/16S1HfHxvKnCP8eointMSnB7t4V_3CPD_5zSNWWclWfM/edit?usp=sharing">
+            <i class="fa fa-lg fa-file-text-o" aria-hidden="true"></i> <strong>Resume</strong>
+        </a>
+    </div>
+
+    <div class="sidebar-intro">
+        I build enterprise level web application solutions that are responsive, performant, and accessible.
+        I enjoy learning the latest front end technologies and standards to ensure that my team always uses industry best practices.
+    </div>
+
+    <div class="sidebar-creds">
+        <div class="row">
+            <div class="col-xs-6">
+                <strong>WORK</strong>
+                <div>The Globe and Mail</div>
+            </div>
+            <div class="col-xs-6">
+                <strong>EDUCATION</strong>
+                <div>Trent University</div>
+                <div>Seneca College</div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="sidebar-social-list">
+        <li>
+            <a target="_blank" href="https://twitter.com/empirecoder">
+            <i class="fa fa-3x fa-twitter-square" title="Twitter" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://ca.linkedin.com/in/jpblanchette">
+            <i class="fa fa-3x fa-linkedin-square" title="LinkedIn" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.instagram.com/empirecoder/">
+            <i class="fa fa-3x fa-instagram" title="Instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://github.com/empirecoder">
+            <i class="fa fa-3x fa-github-square" title="GitHub" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://medium.com/@empirecoder">
+            <i class="fa fa-3x fa-medium" title="Medium" aria-hidden="true"></i>
+            <span class="sr-only">Medium</span></a>
+        </li>
+    </ul>
+
+    <div class="sidebar-hashtags">
+        <ul class="list-inline">
+            <li class="sidebar-hashlink"><a target="_blank" href="https://twitter.com/hashtag/webdevelopment">#webdevelopment</a></li>
+            <li class="sidebar-hashlink"><a target="_blank" href="https://twitter.com/hashtag/programming">#programming</a></li>
+            <li class="sidebar-hashlink"><a target="_blank" href="https://twitter.com/hashtag/technology">#technology</a></li>
+            <li class="sidebar-hashlink"><a target="_blank" href="https://twitter.com/hashtag/movies">#movies</a></li>
+            <li class="sidebar-hashlink"><a target="_blank" href="https://twitter.com/hashtag/sci-fi">#sci-fi</a></li>
+        </ul>
+    </div>
+
+</div>

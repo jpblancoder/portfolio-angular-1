@@ -1,0 +1,288 @@
+// displays
+.display-block {
+    display: block !important;
+}
+.display-inline {
+    display: inline !important;
+}
+.display-inline-block {
+    display: inline-block !important;
+}
+
+// position
+.position-relative {
+    position: relative;
+}
+
+// clear padding or margins
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+
+// text no wrapping
+.txt-nowrap {
+    white-space: nowrap;
+}
+
+// text alignments
+.txt-left {
+    text-align: left !important;
+}
+.txt-right {
+    text-align: right !important;
+}
+.txt-center {
+    text-align: center !important;
+}
+.txt-justify {
+    text-align: justify !important;
+}
+
+// text transform
+.txt-lowercase {
+    text-transform: lowercase;
+}
+.txt-uppercase {
+    text-transform: uppercase;
+}
+.txt-capitalize  {
+    text-transform: capitalize;
+}
+
+// text size
+.txt-xs {
+    font-size: @font-size-base - 4;
+}
+.txt-sm {
+    font-size: @font-size-base - 2;
+}
+.txt-md  {
+    font-size: @font-size-base;
+}
+.txt-lg  {
+    font-size: @font-size-base + 2;
+}
+.txt-xl  {
+    font-size: @font-size-base + 4;
+}
+
+// button widths
+.btn-width-xs {
+    min-width: 25px;
+}
+.btn-width-sm {
+    min-width: 50px;
+}
+.btn-width-md {
+    min-width: 100px;
+}
+.btn-width-lg {
+    min-width: 200px;
+}
+.btn-width-xl {
+    min-width: 400px;
+}
+
+// vertical alignments
+.va-top {
+    vertical-align: top !important;
+}
+.va-middle {
+    vertical-align: middle !important;
+}
+.va-bottom {
+    vertical-align: bottom !important;
+}
+
+// for easy transition speed tweaking
+.trans-all-xs-ease {
+    transition: all 0.25s ease;
+}
+.trans-all-sm-ease {
+    transition: all 0.5s ease;
+}
+.trans-all-md-ease {
+    transition: all 1s ease;
+}
+.trans-all-lg-ease {
+    transition: all 2s ease;
+}
+
+// for easy animation speed tweaking
+.animation-duration-xs {
+    animation-duration: 0.25s;
+}
+.animation-duration-sm {
+    animation-duration: 0.5s;
+}
+.animation-duration-md {
+    animation-duration: 1s;
+}
+.animation-duration-lg {
+    animation-duration: 2s;
+}
+
+// material depths
+.depth-0 {
+    box-shadow: none;
+}
+.depth-1 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.depth-2 {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23);
+}
+.depth-3 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23);
+}
+.depth-4 {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.22);
+}
+.depth-5 {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22);
+}
+
+.clear {
+    clear: both;
+}
+
+// cursors
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-disabled {
+    cursor: not-allowed;
+}
+
+// misc
+.border-top-none {
+    border-top: none !important;
+}
+.border-bottom-none {
+    border-bottom: none !important;
+}
+
+.white-space-pre-line {
+    white-space: pre-line;
+}
+
+// tooltip widths
+.tooltip-width-xs + .tooltip {
+    .tooltip-inner {
+        min-width: 50px;
+    }
+}
+.tooltip-width-sm + .tooltip {
+    .tooltip-inner {
+        min-width: 100px;
+    }
+}
+.tooltip-width-md + .tooltip {
+    .tooltip-inner {
+        min-width: 200px;
+    }
+}
+.tooltip-width-lg + .tooltip {
+    .tooltip-inner {
+        min-width: 400px;
+    }
+}
+.tooltip-width-xl + .tooltip {
+    .tooltip-inner {
+        min-width: 600px;
+    }
+}
+.tooltip-width-xxl + .tooltip {
+    .tooltip-inner {
+        min-width: 800px;
+    }
+}
+
+// popover widths
+.popover-width-auto + .popover {
+    width: auto;
+    max-width: none;
+}
+.popover-width-xs + .popover {
+    width: 50px;
+    max-width: none;
+}
+.popover-width-sm + .popover {
+    width: 100px;
+    max-width: none;
+}
+.popover-width-md + .popover {
+    width: 200px;
+    max-width: none;
+}
+.popover-width-lg + .popover {
+    width: 400px;
+    max-width: none;
+}
+.popover-width-xl + .popover {
+    width: 600px;
+    max-width: none;
+}
+.popover-width-xxl + .popover {
+    width: 800px;
+    max-width: none;
+}
+
+
+// popover percentage widths
+.popover-width-100p + .popover {
+    width: 100%;
+    max-width: none;
+}
+.popover-width-85p + .popover {
+    width: 85%;
+    max-width: none;
+}
+
+// textarea resizing
+.resize-none {
+    resize: none;
+}
+.resize-both {
+    resize: both;
+}
+.resize-vertical {
+    resize: vertical;
+}
+.resize-horizontal {
+    resize: horizontal;
+}
+
+
+// percentage widths for columns
+.width-auto {
+    width: auto;
+}
+.width-full {
+    width: 100%;
+}
+
+// non-responsize percentage widths
+.width-xp(@size, @step) when (@size > 0) {
+  .width-@{size}p { width: (0% + @size); }
+    .width-xp((@size - @step), @step);
+}
+
+// start at 100% to 0% and step by 5%
+.width-xp(100, 5);

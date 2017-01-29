@@ -1,0 +1,17 @@
+{
+    "verbose": true,
+    "preset": "google",
+    "esnext": false,
+    "maximumLineLength": false,
+    "requireCamelCaseOrUpperCaseIdentifiers": false,
+    "validateIndentation": 4,
+    "validateQuoteMarks": false,
+    "disallowSpacesInAnonymousFunctionExpression": false,
+    "disallowSpacesInFunctionExpression": false,
+    "disallowSpacesInFunction": false,
+    "disallowMultipleLineBreaks": false,
+    "disallowSpacesInsideObjectBrackets": false,
+    "disallowSpacesInsideArrayBrackets": false,
+    "requireLineFeedAtFileEnd": false,
+    "jsDoc": false
+}

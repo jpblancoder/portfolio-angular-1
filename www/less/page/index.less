@@ -1,0 +1,73 @@
+
+.cover-photo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    padding: 0;
+    background-image: url('../img/index-cover.jpg');
+    background-size: cover;
+    background-color: #333;
+    background-position: 47.5025% 54.1429%;
+    background-repeat: no-repeat;
+}
+
+// .cover-photo:before {
+//     content: "";
+//     display: block;
+//     background-color: rgba(0, 0, 0, 0.1);
+//     width: 100%;
+//     height: 100%;
+// }
+
+// hexagaon photo
+// ----------------------------------
+.pic-hex {
+    display: none;
+    margin: -110px auto 0 auto;
+    overflow: hidden;
+    visibility: hidden;
+    .transform(rotate(120deg));
+}
+.pic-hex-2 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    .transform(rotate(-60deg));
+}
+.pic-hex-3 {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background: url('../img/index-thumb.jpg') 50% no-repeat;
+    .transform(rotate(-60deg));
+}
+
+.make-pic-hex-point(@width) {
+    width: (@width / 1.142857142857143);
+    height: @width;
+}
+.pic-hex-point {
+    .make-pic-hex-point(160px);
+}
+
+@media @visible-xs, @visible-sm {
+    body {
+        background-attachment: fixed;
+        background-color: @brand-primary;
+        background-image: linear-gradient(135deg, @brand-primary 0%, lighten(@brand-primary, 20%) 100%);
+    }
+    .pic-hex {
+        display: block;
+    }
+}
+
+.main-view {
+    &.ng-enter {
+        transition: .3s;
+        opacity: 0.2;
+    }
+    &.ng-enter-active {
+        opacity: 0.8;
+    }
+}

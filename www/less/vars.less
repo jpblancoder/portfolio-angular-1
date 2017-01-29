@@ -1,0 +1,28 @@
+// media query helpers
+// -------------------------
+// Example:
+// @media @visible-lg {
+//     regular CSS code.
+// }
+
+// phone landscape [down] - extra small
+@visible-xs: ~"(max-width: @{screen-xs-max})";
+@hidden-xs: ~"(max-width: @{screen-xs-max})";
+
+// tablet - small
+@visible-sm: ~"(min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+@hidden-sm: ~"(min-width: @{screen-sm-min}), (max-width: @{screen-sm-max})";
+
+// desktop - medium
+@visible-md: ~"(min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+@hidden-md: ~"(min-width: @{screen-md-min}), (max-width: @{screen-md-max})";
+
+// widescreen [up] - large
+@visible-lg: ~"(min-width: @{screen-lg-min})";
+@hidden-lg: ~"(min-width: @{screen-lg-min})";
+
+// visible when grid is uncollapsed / horizontal
+@active-bp-up: ~"(min-width: @{grid-float-breakpoint})";
+
+// visible when grid is collapsed / inline
+@active-bp-down: ~"(max-width: @{grid-float-breakpoint-max})";
