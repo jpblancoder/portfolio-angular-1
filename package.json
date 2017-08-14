@@ -1,11 +1,11 @@
 {
   "name": "Port4",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Portfolio site for JP Blanchette.",
   "author": "JP Blanchette <empirecoder@gmail.com>",
   "license": "MIT",
   "scripts": {
-      "start": "node open.js; node boot.js"
+    "start": "node open.js; node boot.js"
   },
   "devDependencies": {
     "bower": "^1.7.9",
