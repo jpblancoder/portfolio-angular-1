@@ -164,7 +164,7 @@ gulp.task('deploy', function() {
     return gulp.src([
         public_folder + '/**/*'
     ])
-    .pipe(awspublish.gzip())
+    // .pipe(awspublish.gzip({ ext: '.gz' }))
     .pipe(publisher.publish({
         // 31536000 = 365 days
         'Cache-Control': 'max-age=31536000,s-maxage=31536000,no-transform,public',
